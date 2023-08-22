@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  // outline: 1px solid limegreen !important;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  //   font-weight: 400;
+  //   letter-spacing: 0.36px;
+  background-color: $color-primary-dark;
+  //   background-color: $color-white;
+  color: $color-black;
+  scrollbar-gutter: stable;
+}
