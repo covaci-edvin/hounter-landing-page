@@ -1,0 +1,73 @@
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  text-transform: capitalize;
+}
+
+.heading-1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.heading-3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.heading-4 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.body-text,
+.body-text-medium,
+.body-text-semibold {
+  font-size: 1.8rem;
+}
+
+.body-text {
+  font-weight: 300;
+}
+
+.body-text-medium {
+  font-weight: 500;
+}
+
+.body-text-semibold {
+  font-weight: 600;
+}
+
+.label-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.label-text-small {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.label-text-medium {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.label-text-semibold {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.icon {
+  fill: green;
+}
