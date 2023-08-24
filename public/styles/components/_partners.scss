@@ -1,0 +1,16 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.partner {
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+
+  &__img {
+    height: 2.3rem;
+    object-fit: contain;
+  }
+}
