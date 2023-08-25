@@ -1,9 +1,8 @@
 .header {
-  // background-color: $color-grey-3;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  z-index: 10;
+  width: 100%;
+
   &__content {
     display: flex;
     align-items: center;
