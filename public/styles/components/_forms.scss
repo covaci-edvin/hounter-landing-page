@@ -1,0 +1,32 @@
+.form {
+  &--default {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  &--complex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.4rem 0.4rem 2.4rem;
+    gap: 1.6rem;
+    width: 100%;
+    outline: $border-input;
+    outline-offset: -1px;
+    border-radius: $radius-input;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: $color-secondary;
+  }
+}
+
+.form__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 49.6rem;
+}
