@@ -19,7 +19,10 @@ $color-info: #1d4ed8;
 $color-info-light: #dbeafe;
 
 //borders
-
 $border-input: 1px solid $color-grey-1;
 $border-input-focus: 1px solid $color-primary;
 $radius-input: 2.8rem;
+
+//shadows
+$shadow-lg: 0 1.1rem 4.8rem rgba(51, 51, 51, 0.06);
+$shadow-md: 0 .8rem 3.2rem rgba(12, 21, 55, 0.09);
