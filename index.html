@@ -45,6 +45,131 @@
     <link rel="stylesheet" href="/public/styles/main.scss" />
   </head>
   <body>
+
+    <header class="header">
+      <div class="header__content u-section-content">
+        <img
+          class="header__logo"
+          src="/assets/svgs/logo.svg"
+          alt="houter logo"
+        />
+        <nav class="header__navbar">
+          <ul class="navbar">
+            <li class="navbar__item">
+              <a href="#" class="btn btn--white" aria-label="About Us">
+                About Us
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="btn btn--white" aria-label="Article">
+                Article
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a
+                href="#"
+                class="btn btn--white btn--white-dropdown dropdown-trigger"
+                aria-label="Property"
+                id="property"
+              >
+                <span>Property</span>
+                <svg class="dropdown__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#arrow" />
+                </svg>
+                <div class="dropdown">
+                  <ul class="dropdown__list"></ul>
+                </div>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="btn btn--outline" aria-label="Sign Up">
+                Sign Up
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero__content">
+          <div class="hero__text-block">
+            <h1 class="heading-1 hero__heading">
+              find the place to live
+              <span class="hero__heading-em">your dreams</span> easily here
+            </h1>
+            <p class="hero__subheading body-text">
+              Everything you need about finding your place to live will be here,
+              where it will be easier for you
+            </p>
+          </div>
+          <div class="hero__cta form__group">
+            <form action="" class="form--complex">
+              <label for="location">
+                <svg class="form__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#location" />
+                </svg>
+              </label>
+              <input
+                type="text"
+                id="location"
+                class="input input--complex"
+                placeholder="Search for the location you want!"
+              />
+              <button href="#" class="btn btn--filled btn--icon-right">
+                <span>Search</span>
+                <svg class="btn__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#arrow" />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="hero__partners">
+            <p class="hero__partners-title body-text">Our partnership</p>
+            <div class="partners">
+              <div class="partner">
+                <img
+                  class="partner__img"
+                  src="/assets/images/partner-traveloka.webp"
+                  alt="traveloka logo"
+                />
+              </div>
+              <div class="partner">
+                <img
+                  class="partner__img"
+                  src="/assets/images/partner-tiketcom.webp"
+                  alt="tiketcom logo"
+                />
+              </div>
+              <div class="partner">
+                <img
+                  class="partner__img"
+                  src="/assets/images/partner-airbnb.webp"
+                  alt="airbnb logo"
+                />
+              </div>
+              <div class="partner">
+                <img
+                  class="partner__img"
+                  src="/assets/images/partner-tripadvisor.webp"
+                  alt="tripadvisor logo"
+                />
+              </div>
+            </div>
+          </div>
+          <img src="/assets/svgs/blur-bg-1.svg" alt="" class="hero__blur-bg" />
+        </div>
+        <div class="hero__img-container">
+          <div class="hero__accomplishments"></div>
+          <img
+            class="hero__bg-img"
+            src="/assets/images/hero.webp"
+            alt="villa property"
+          />
+        </div>
+      </section>
+    </main>
+
     <h1 class="heading-1">heading one</h1>
     <h2 class="heading-2">Heading 2</h2>
     <h3 class="heading-3">Heading 3</h3>
