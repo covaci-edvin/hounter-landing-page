@@ -2,50 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/svgs/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hounter</title>
+    <title>Vite App</title>
 
     <link
       rel="preload"
-      href="/assets/fonts/lexend-light.woff2"
+      href="/public/assets/fonts/lexend-light.woff2"
       as="font"
       type="font/woff"
       crossorigin
     />
     <link
       rel="preload"
-      href="/assets/fonts/lexend-black.woff2"
+      href="/public/assets/fonts/lexend-black.woff2"
       as="font"
       type="font/woff"
       crossorigin
     />
     <link
       rel="preload"
-      href="/assets/fonts/lexend-medium.woff2"
+      href="/public/assets/fonts/lexend-medium.woff2"
       as="font"
       type="font/woff"
       crossorigin
     />
     <link
       rel="preload"
-      href="/assets/fonts/lexend-regular.woff2"
+      href="/public/assets/fonts/lexend-regular.woff2"
       as="font"
       type="font/woff"
       crossorigin
     />
     <link
       rel="preload"
-      href="/assets/fonts/lexend-semibold.woff2"
+      href="/public/assets/fonts/lexend-semibold.woff2"
       as="font"
       type="font/woff"
       crossorigin
     />
 
-    <link rel="stylesheet" href="public/styles/main.scss" />
+    <link rel="stylesheet" href="/public/styles/main.scss" />
   </head>
   <body>
-    
+
     <header class="header">
       <div class="header__content u-section-content">
         <img
@@ -266,6 +266,27 @@
       <span class="label-text-medium">Best deals</span>
     </div>
 
+    <div class="form__group">
+      <form action="" class="form--complex">
+        <label for="location">
+          <svg class="form__icon">
+            <use xlink:href="/assets/svgs/sprite.svg#location" />
+          </svg>
+        </label>
+        <input
+          type="text"
+          id="location"
+          class="input input--complex"
+          placeholder="Search for the location you want!"
+        />
+        <button href="#" class="btn btn--filled btn--icon-right">
+          <span>Search</span>
+          <svg class="btn__icon">
+            <use xlink:href="/assets/svgs/sprite.svg#arrow" />
+          </svg>
+        </button>
+      </form>
+    </div>
     <form action="" class="form--default">
       <div class="form__group">
         <input
