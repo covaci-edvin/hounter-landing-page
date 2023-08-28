@@ -1,0 +1,42 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  .small {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .large {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+
+  &__img-container {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  &__heading {
+    line-height: 2.4rem;
+  }
+
+  &__sub-heading {
+    line-height: 2.2rem;
+    color: $color-grey-2;
+  }
+}
