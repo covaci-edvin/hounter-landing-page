@@ -10,13 +10,15 @@ import { setTextArea } from "./views/textareaView.js";
 import { MAX_NUM_OF_CHARS } from "./config.js";
 import { setAccomplishments } from "./views/accomplishmentsScrollView.js";
 import { setRecommendations } from "./views/recommendationsView.js";
+import { setVideoPlayer } from "./views/videoPlayerView.js";
 
 function init() {
   setPropertyDropdown(typesOfProperty);
-  setSelectInput();
-  setTextArea(MAX_NUM_OF_CHARS);
+  // setSelectInput();
+  // setTextArea(MAX_NUM_OF_CHARS);
   setAccomplishments(accomplishments);
   setRecommendations(recommendations, labels);
+  setVideoPlayer();
 }
 
 init();

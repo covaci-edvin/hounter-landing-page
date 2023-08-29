@@ -1,0 +1,13 @@
+.house-detail {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: $color-grey-3;
+  min-width: 19.3rem;
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: currentColor;
+  }
+}

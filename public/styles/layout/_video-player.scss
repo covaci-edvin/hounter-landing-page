@@ -1,0 +1,44 @@
+.video-player {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+
+  &__video-box {
+    width: 50%;
+    border-radius: 0.8rem;
+    z-index: 1;
+  }
+}
+
+.show-video-player {
+  display: flex;
+  opacity: 1;
+}
+
+.backdrop {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1rem);
+
+  &__close-icon {
+    position: absolute;
+    max-height: 3.4rem;
+    max-width: 3.4rem;
+    top: 3rem;
+    right: 4.4rem;
+    stroke: $color-white;
+  }
+}

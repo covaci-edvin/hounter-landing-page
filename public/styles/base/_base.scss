@@ -22,3 +22,7 @@ body {
   color: $color-black;
   scrollbar-gutter: stable;
 }
+
+.lock-scroll {
+  overflow: hidden;
+}

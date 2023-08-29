@@ -1,0 +1,114 @@
+.tour-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour {
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 2.3rem;
+  }
+
+  &__subtitle {
+    margin-top: 1.7rem;
+    color: $color-grey-2;
+    max-width: 41.3rem;
+    line-height: 2.4rem;
+  }
+
+  &__details {
+    margin-bottom: 3.2rem;
+  }
+
+  &__house-details {
+    margin-top: 2.4rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    column-gap: 5.3rem;
+    row-gap: 1.6rem;
+  }
+
+  &__gallery {
+    max-width: 52.8rem;
+    max-height: 45.9rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+  }
+}
+
+.thumbnail {
+  &__container {
+    grid-area: 1 / 2 / -2 / -1;
+    cursor: pointer;
+    width: 47.8rem;
+    height: 41.6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0% 100%);
+    overflow: hidden;
+
+    &:hover {
+      .thumbnail__img {
+        transform: scale(1.04);
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  &__icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+.tour__gallery-imgs {
+  grid-area: 12/ 1/ -1 / -1;
+  z-index: 1;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  align-items: end;
+
+  img {
+    border-radius: 0.8rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  }
+
+  .gallery-img-1 {
+    grid-column: 1/2;
+    object-fit: cover;
+    margin-right: 1.2rem;
+  }
+
+  .gallery-img-2,
+  .gallery-img-3 {
+    max-width: 9.6rem;
+  }
+
+  .gallery-img-2 {
+    grid-column: 2/3;
+    margin-right: 0.8rem;
+  }
+
+  .gallery-img-3 {
+    grid-column: 3/4;
+  }
+}
