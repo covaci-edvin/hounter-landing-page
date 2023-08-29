@@ -1,5 +1,9 @@
 //FONT STYLES
-$font-primary: "Lexend", sans-serif;
+$font-primary-light: "LexendLight", sans-serif;
+$font-primary-regular: "LexendRegular", sans-serif;
+$font-primary-medium: "LexendMedium", sans-serif;
+$font-primary-semibold: "LexendSemibold", sans-serif;
+$font-primary-black: "LexendBlack", sans-serif;
 //COLORS
 //monochrome
 $color-white: #fff;
@@ -25,4 +29,4 @@ $radius-input: 2.8rem;
 
 //shadows
 $shadow-lg: 0 1.1rem 4.8rem rgba(51, 51, 51, 0.06);
-$shadow-md: 0 .8rem 3.2rem rgba(12, 21, 55, 0.09);
+$shadow-md: 0 0.8rem 3.2rem rgba(12, 21, 55, 0.09);

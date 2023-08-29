@@ -1,34 +1,34 @@
 @font-face {
-  font-family: "Lexend";
-  src: url(./lexend-light.woff2) format("woff2");
-  font-weight: 300;
+  font-family: "LexendLight";
   font-style: normal;
+  font-weight: normal;
+  src: url("./lexend-light.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url(./lexend-regular.woff2) format("woff2");
-  font-weight: 400;
+  font-family: "LexendRegular";
   font-style: normal;
+  font-weight: normal;
+  src: url("./lexend-regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url(./lexend-medium.woff2) format("woff2");
-  font-weight: 500;
+  font-family: "LexendMedium";
   font-style: normal;
+  font-weight: normal;
+  src: url("./lexend-medium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url(./lexend-semibold.woff2) format("woff2");
-  font-weight: 600;
+  font-family: "LexendSemibold";
   font-style: normal;
+  font-weight: normal;
+  src: url("./lexend-semibold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url(./lexend-black.woff2) format("woff2");
-  font-weight: 900;
+  font-family: "LexendBlack";
   font-style: normal;
+  font-weight: normal;
+  src: url("./lexend-black.woff2") format("woff2");
 }

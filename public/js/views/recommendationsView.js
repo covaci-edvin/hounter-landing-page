@@ -1,3 +1,4 @@
+import { renderMarkup } from "./View.js";
 import { generateLabelMarkup } from "./labelView.js";
 import { createUserMarkup } from "./userView.js";
 
@@ -58,11 +59,6 @@ function createRecommsMarkup(recommendations, labels) {
       return createRecommMarkup(recomm, labels);
     })
     .join("");
-}
-
-function renderMarkup(parent, markup) {
-  parent.innerHTML = "";
-  parent.insertAdjacentHTML("afterbegin", markup);
 }
 
 export const setRecommendations = function (recommendations, labels) {
