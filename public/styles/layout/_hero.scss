@@ -64,17 +64,9 @@
   }
 
   &__accomplishments {
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    @include horizontalScroll;
     display: flex;
-
     gap: 1.6rem;
     padding-bottom: 4.8rem;
-  }
-
-  &__accomplishments::-webkit-scrollbar {
-    width: 0;
-    height: 0;
   }
 }
