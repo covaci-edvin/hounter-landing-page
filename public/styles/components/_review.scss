@@ -1,0 +1,72 @@
+.review {
+  min-width: 78.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: center;
+  cursor: pointer;
+  &:hover {
+    .review__img {
+      transform: scale(1.05);
+    }
+  }
+
+  &__img-container {
+    width: 100%;
+    height: 42.9rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    object-fit: cover;
+  }
+
+  &__card {
+    margin: -16.9rem 3.2rem 0 3.2rem;
+    position: relative;
+    max-width: 61.2rem;
+    transition: transform 0.2s;
+    z-index: 10;
+    padding: 3.2rem;
+    box-shadow: $shadow-md;
+    border-radius: 1.6rem;
+    background-color: $color-white;
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &__review {
+    margin-bottom: 2.4rem;
+    color: $color-grey-3;
+    line-height: 2.4rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__rating-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-secondary;
+  }
+}

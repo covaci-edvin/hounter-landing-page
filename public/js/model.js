@@ -90,3 +90,42 @@ export const labels = {
     message: "Best deals",
   },
 };
+
+export const reviews = [
+  {
+    title: "My house sold out fast!",
+    img: "review-1.webp",
+    review:
+      "I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!",
+    rating: "4.3",
+    user: {
+      name: "Dianne Russell",
+      photo: "avatar-1.webp",
+      subheading: "Manchester, Kentucky",
+    },
+  },
+  {
+    title: "Through the Hounter, I can get a house for my self",
+    img: "review-2.webp",
+    review:
+      "By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!",
+    rating: "4.6",
+    user: {
+      name: "Ronald Richards",
+      photo: "avatar-2.webp",
+      subheading: "Head of Marketing",
+    },
+  },
+  {
+    title: "Best! I got the house I wanted through Hounter",
+    img: "review-3.webp",
+    review:
+      "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+    rating: "4.6",
+    user: {
+      name: "Jenny Wilson",
+      photo: "avatar-3.webp",
+      subheading: "Manager Director",
+    },
+  },
+];

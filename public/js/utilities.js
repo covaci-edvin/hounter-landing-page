@@ -13,3 +13,17 @@ export function isTouchScreen() {
     navigator.msMaxTouchPoints > 0
   );
 }
+
+export function onScrollStop(parent, callback) {
+  let isScrolling;
+  parent.addEventListener(
+    "scroll",
+    () => {
+      clearTimeout(isScrolling);
+      isScrolling = setTimeout(() => {
+        callback();
+      }, 100);
+    },
+    false
+  );
+}

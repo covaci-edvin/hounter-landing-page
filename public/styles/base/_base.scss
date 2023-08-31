@@ -25,5 +25,6 @@ body {
 }
 
 .lock-scroll {
-  overflow: hidden;
+  // position: fixed;
+  overflow-y: hidden;
 }

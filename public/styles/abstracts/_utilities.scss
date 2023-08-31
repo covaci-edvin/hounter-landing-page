@@ -14,10 +14,7 @@
 
 //LAYOUT
 .u-section-content {
-  margin: 0 auto;
-  max-width: 126rem;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
+  @include centerSection;
 
   &:not(:first-child) {
     margin-top: 12rem;
