@@ -97,12 +97,13 @@ export const setReviews = function (reviews) {
   createAndRenderCarouselDots(dotsParent, reviews);
 
   const reviewsArr = document.querySelectorAll(".review");
+  createCarousel("review");
+
   const dots = document.querySelectorAll(".reviews__dot");
 
   let activeReview;
   let centeredReview;
 
-  createCarousel(parent, "review");
 
   function setDefaultActiveReview(slideWidth) {
     const defaultReviewId = 2;

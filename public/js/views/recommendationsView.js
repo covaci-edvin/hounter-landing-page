@@ -1,5 +1,6 @@
 import { renderMarkup } from "./View.js";
 import {
+  createCarousel,
   navigateLeft,
   navigateRight,
   setCarouselPadding,
@@ -46,18 +47,6 @@ function clearFilters(filters) {
   filters.forEach((filter) => filter.classList.remove("filter-active"));
 }
 
-// function setCarouselPadding(elClass) {
-//   const paddingHorizontal = document
-//     .querySelector(".recommendation__heading")
-//     .getBoundingClientRect().left;
-
-//   const first = document.querySelector(`.${elClass}:first-child`);
-//   const last = document.querySelector(`.${elClass}:last-child`);
-
-//   first.style.paddingLeft = `${paddingHorizontal}px`;
-//   last.style.paddingRight = `${paddingHorizontal}px`;
-// }
-
 function createRecommsMarkup(recommendations, labels) {
   return recommendations
     .map((recomm) => {
@@ -101,7 +90,7 @@ export const setRecommendations = function (recommendations, labels) {
   const markup = createRecommsMarkup(recommendations, labels);
 
   renderMarkup(parent, markup);
-  setCarouselPadding("recommendation");
+  createCarousel("recommendation");
 
   const cardWidth = document.querySelector(
     ".recommendation:nth-child(2)"

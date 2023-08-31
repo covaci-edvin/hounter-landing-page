@@ -22,7 +22,7 @@ export function navigateRight(parent, cardWidth) {
   parent.scrollLeft += cardWidth;
 }
 
-export const createCarousel = function (parent, carouselElClass) {
+export const createCarousel = function (carouselElClass) {
   setCarouselPadding(carouselElClass);
 };
 
