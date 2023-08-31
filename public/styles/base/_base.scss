@@ -21,4 +21,9 @@ body {
   background-color: $color-white;
   color: $color-black;
   scrollbar-gutter: stable;
+  overflow-x: hidden;
+}
+
+.lock-scroll {
+  overflow: hidden;
 }

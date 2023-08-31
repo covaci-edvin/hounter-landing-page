@@ -3,19 +3,11 @@
 }
 
 .recommendations {
+  @include horizontalScroll;
   display: flex;
   margin-top: 3.6rem;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   transition: opacity 0.2s ease-out;
   opacity: 0;
-
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
 }
 
 .recommendation {

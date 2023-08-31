@@ -44,7 +44,7 @@
 
     <link rel="stylesheet" href="public/styles/main.scss" />
   </head>
-  <body>
+  <body class="">
     <header class="header">
       <div class="header__content u-section-content">
         <img
@@ -228,6 +228,120 @@
         </div>
         <div class="recommendations u-show"></div>
       </section>
+      <section class="tour-section u-section-content">
+        <div class="tour__info">
+          <h2 class="section-title label-text">Ready to Sell</h2>
+          <div class="tour__title">
+            <h1 class="heading-2">Let's tour and see our house!</h1>
+            <p class="body-text tour__subtitle">
+              Houses recommended by our partners that have been curated to
+              become the home of your dreams!
+            </p>
+          </div>
+          <div class="tour__details">
+            <h3 class="body-text-semibold">House Detail</h3>
+            <div class="tour__house-details">
+              <div class="house-detail">
+                <svg class="house-detail__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#bed" />
+                </svg>
+                <p class="house-detail__title body-text-medium">4 Bedrooms</p>
+              </div>
+              <div class="house-detail">
+                <svg class="house-detail__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#bath" />
+                </svg>
+                <p class="house-detail__title body-text-medium">2 Bathrooms</p>
+              </div>
+              <div class="house-detail">
+                <svg class="house-detail__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#car" />
+                </svg>
+                <p class="house-detail__title body-text-medium">1 Carport</p>
+              </div>
+              <div class="house-detail">
+                <svg class="house-detail__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#stairs" />
+                </svg>
+                <p class="house-detail__title body-text-medium">2 Floors</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact contact-border-top">
+            <div class="user">
+              <div class="user__img-container large">
+                <img
+                  class="user__img"
+                  src="/assets/images/avatar-1.webp"
+                  alt="user"
+                />
+              </div>
+              <div class="user__details">
+                <h1 class="user__heading subtitle">Dianne Russell</h1>
+                <p class="user__sub-heading label-text">Manchester, Kentucky</p>
+              </div>
+            </div>
+            <a
+              href="tel:123456789"
+              class="btn btn--filled btn--icon-left"
+              aria-label="More articles"
+            >
+              <span>Contact now</span>
+              <svg class="btn__icon">
+                <use xlink:href="/assets/svgs/sprite.svg#call" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="tour__gallery">
+          <div class="thumbnail__container">
+            <img
+              class="thumbnail__img"
+              src="/public/assets/images/tour-video-thumbnail.webp"
+              alt="video tumbnail"
+            />
+            <svg class="thumbnail__icon">
+              <use xlink:href="/assets/svgs/sprite.svg#play" />
+            </svg>
+          </div>
+          <div class="tour__gallery-imgs">
+            <img
+              src="/public/assets/images/tour-furniture-1.webp"
+              alt="sofa furniture"
+              class="gallery-img-1"
+            />
+            <img
+              src="/public/assets/images/tour-furniture-2.webp"
+              alt="furniture"
+              class="gallery-img-2"
+            />
+            <img
+              src="/public/assets/images/tour-furniture-3.webp"
+              alt="furniture"
+              class="gallery-img-3"
+            />
+          </div>
+        </div>
+        <img src="/assets/svgs/blur-bg-2.svg" alt="" class="tour__blur-bg" />
+      </section>
+      <div class="video-player">
+        <iframe
+          class="video-player__video-box"
+          src="https://www.veed.io/embed/c26d530c-d929-47f8-a5a2-3e7f2e9c6dfa"
+          width="744"
+          height="504"
+          frameborder="0"
+          title="Tour"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+        <div class="backdrop">
+          <svg class="backdrop__close-icon">
+            <use xlink:href="/assets/svgs/sprite.svg#cross" />
+          </svg>
+        </div>
+      </div>
     </main>
 
     <!-- <div class="user">
@@ -356,7 +470,7 @@
     </div>
      -->
 
-    <form action="" class="form--default">
+    <!-- <form action="" class="form--default">
       <div class="form__group">
         <input
           type="email"
@@ -428,7 +542,7 @@
           </span>
         </label>
       </div>
-    </form>
+    </form> -->
 
     <script type="module" src="/js/controller.js"></script>
   </body>
