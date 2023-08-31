@@ -19,7 +19,7 @@ export function onScrollStop(parent, callback) {
   parent.addEventListener(
     "scroll",
     () => {
-      clearTimeout(isScrolling);
+      isScrolling && clearTimeout(isScrolling);
       isScrolling = setTimeout(() => {
         callback();
       }, 100);

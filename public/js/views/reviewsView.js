@@ -33,7 +33,7 @@ function createReviewMarkup(review) {
             <div class="review__img-container">
                 <img
                     class="review__img"
-                    src="/public/assets/images/${review.img}"
+                    src="/assets/images/${review.img}"
                     alt="review 1"
                 />
             </div>
