@@ -6,6 +6,13 @@ function isMobile() {
   }
 }
 
+function getMonthShortName(monthNo) {
+  const date = new Date();
+  date.setMonth(monthNo);
+
+  return date.toLocaleString("en-US", { month: "short" });
+}
+
 export function isTouchScreen() {
   return (
     "ontouchstart" in window ||
@@ -26,4 +33,14 @@ export function onScrollStop(parent, callback) {
     },
     false
   );
+}
+
+export function getDate(time) {
+  const date = new Date(time);
+
+  const day = date.getDate();
+  const month = getMonthShortName(date.getMonth());
+  const year = date.getYear();
+
+  return `${day} ${month} ${year}`;
 }

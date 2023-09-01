@@ -1,6 +1,7 @@
 import { setPropertyDropdown } from "./views/dropdownView.js";
 import {
   accomplishments,
+  articles,
   labels,
   recommendations,
   reviews,
@@ -13,6 +14,7 @@ import { setAccomplishments } from "./views/accomplishmentsScrollView.js";
 import { setRecommendations } from "./views/recommendationsView.js";
 import { setVideoPlayer } from "./views/videoPlayerView.js";
 import { setReviews } from "./views/reviewsView.js";
+import { setArticles } from "./views/articlesView.js";
 
 function init() {
   setPropertyDropdown(typesOfProperty);
@@ -21,7 +23,8 @@ function init() {
   setAccomplishments(accomplishments);
   setRecommendations(recommendations, labels);
   setVideoPlayer();
-  setReviews(reviews)
+  setReviews(reviews);
+  setArticles(articles);
 }
 
 init();

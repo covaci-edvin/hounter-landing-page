@@ -1,5 +1,5 @@
 .reviews-heading {
-  @include centerSection;
+  @include centerSection; //  margin: 0 auto;
   margin-top: 12rem;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,5 @@
     width: 0.8rem;
     background-color: $color-grey-1;
     border-radius: 50%;
-    margin-bottom: 4rem;
   }
 }
