@@ -1,5 +1,5 @@
 .reviews-heading {
-  @include centerSection;
+  @include centerSection; //  margin: 0 auto;
   margin-top: 12rem;
   display: flex;
   flex-direction: column;

@@ -17,3 +17,9 @@
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
+
+@mixin fillImgContainer {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -129,3 +129,85 @@ export const reviews = [
     },
   },
 ];
+
+export const articles = [
+  {
+    imageSmall: "article-1-sm.webp",
+    imageLarge: "article-1-lg.webp",
+    user: {
+      name: "Dianne Russell",
+      photo: "avatar-4.webp",
+    },
+    title: "The things we need to check when we want to buy a house",
+    summary:
+      "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+    readTime: "4",
+    date: 1619298000000,
+  },
+  {
+    imageSmall: "article-2-sm.webp",
+    imageLarge: "article-2-lg.webp",
+    user: {
+      name: "Courtney Henry",
+      photo: "avatar-8.webp",
+    },
+    title: "7 Ways to distinguish the quality of the house we want to buy",
+    summary:
+      "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+    readTime: "6",
+    date: 1619211600000,
+  },
+  {
+    imageSmall: "article-3-sm.webp",
+    imageLarge: "article-3-lg.webp",
+    user: {
+      name: "Darlene Robertson",
+      photo: "avatar-9.webp",
+    },
+    title: "The best way to know the quality of the house we want to buy",
+    summary:
+      "Unlocking the Secrets: The ultimate guide to gaining a comprehensive understanding of the house you're considering for purchase, ensuring you make the right investment.",
+    readTime: "2",
+    date: 1619211600000,
+  },
+
+  {
+    imageSmall: "article-4-sm.webp",
+    imageLarge: "article-4-lg.webp",
+    user: {
+      name: "Cameron Williamson",
+      photo: "avatar-10.webp",
+    },
+    title: "12 Things to know before buying a house",
+    summary:
+      "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+    readTime: "4",
+    date: 1619298000000,
+  },
+  {
+    imageSmall: "article-2-sm.webp",
+    imageLarge: "article-2-lg.webp",
+    user: {
+      name: "Courtney Henry",
+      photo: "avatar-8.webp",
+    },
+    title: "7 Ways to distinguish the quality of the house we want to buy",
+    summary:
+      "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+    readTime: "6",
+    date: 1619211600000,
+  },
+  {
+    imageSmall: "article-3-sm.webp",
+    imageLarge: "article-3-lg.webp",
+    user: {
+      name: "Darlene Robertson",
+      photo: "avatar-9.webp",
+    },
+    title: "The best way to know the quality of the house we want to buy",
+    summary:
+      "Unlocking the Secrets: The ultimate guide to gaining a comprehensive understanding of the house you're considering for purchase, ensuring you make the right investment.",
+    readTime: "2",
+    date: 1619211600000,
+  },
+];
