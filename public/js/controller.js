@@ -3,6 +3,7 @@ import {
   accomplishments,
   labels,
   recommendations,
+  reviews,
   properties as typesOfProperty,
 } from "./model.js";
 import { setSelectInput } from "./views/selectInputView.js";
@@ -11,6 +12,7 @@ import { MAX_NUM_OF_CHARS } from "./config.js";
 import { setAccomplishments } from "./views/accomplishmentsScrollView.js";
 import { setRecommendations } from "./views/recommendationsView.js";
 import { setVideoPlayer } from "./views/videoPlayerView.js";
+import { setReviews } from "./views/reviewsView.js";
 
 function init() {
   setPropertyDropdown(typesOfProperty);
@@ -19,6 +21,7 @@ function init() {
   setAccomplishments(accomplishments);
   setRecommendations(recommendations, labels);
   setVideoPlayer();
+  setReviews(reviews)
 }
 
 init();

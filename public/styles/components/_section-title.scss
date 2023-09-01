@@ -4,15 +4,32 @@
   line-height: 2.4rem;
   margin-bottom: 0.6rem;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 3.2rem;
-    height: 1px;
-    background-color: currentColor;
-    position: absolute;
-    left: -0.8rem;
-    top: 50%;
-    transform: translateX(-100%);
+  &--horizontal {
+    &::before {
+      content: "";
+      display: block;
+      width: 3.2rem;
+      height: 1px;
+      background-color: currentColor;
+      position: absolute;
+      left: -0.8rem;
+      top: 50%;
+      transform: translateX(-100%);
+    }
+  }
+
+  &--vertical {
+    padding-top: 0.8rem;
+    &::before {
+      content: "";
+      display: block;
+      width: 3.2rem;
+      height: 1px;
+      background-color: currentColor;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

@@ -1,4 +1,10 @@
 import { renderMarkup } from "./View.js";
+import {
+  createCarousel,
+  navigateLeft,
+  navigateRight,
+  setCarouselPadding,
+} from "./carouselView.js";
 import { generateLabelMarkup } from "./labelView.js";
 import { createUserMarkup } from "./userView.js";
 
@@ -41,18 +47,6 @@ function clearFilters(filters) {
   filters.forEach((filter) => filter.classList.remove("filter-active"));
 }
 
-function setCarouselPadding() {
-  const paddingHorizontal = document
-    .querySelector(".recommendation__heading")
-    .getBoundingClientRect().left;
-
-  const firstRecomm = document.querySelector(".recommendation:first-child");
-  const lastRecomm = document.querySelector(".recommendation:last-child");
-
-  firstRecomm.style.paddingLeft = `${paddingHorizontal}px`;
-  lastRecomm.style.paddingRight = `${paddingHorizontal}px`;
-}
-
 function createRecommsMarkup(recommendations, labels) {
   return recommendations
     .map((recomm) => {
@@ -71,7 +65,7 @@ export const setRecommendations = function (recommendations, labels) {
     clearFilters(filters);
     setTimeout(function () {
       renderMarkup(parent, createRecommsMarkup(sortedRecomms, labels));
-      setCarouselPadding();
+      setCarouselPadding("recommendation");
       parent.scrollLeft = 0;
       parent.classList.add("u-show");
     }, seconds * 1000);
@@ -96,17 +90,19 @@ export const setRecommendations = function (recommendations, labels) {
   const markup = createRecommsMarkup(recommendations, labels);
 
   renderMarkup(parent, markup);
-  setCarouselPadding();
+  createCarousel("recommendation");
 
   const cardWidth = document.querySelector(
     ".recommendation:nth-child(2)"
   ).offsetWidth;
 
-  navigateLeftBtn.addEventListener("click", function navigateLeft() {
-    parent.scrollLeft -= cardWidth;
-  });
+  navigateLeftBtn.addEventListener(
+    "click",
+    navigateLeft.bind(null, parent, cardWidth)
+  );
 
-  navigateRightBtn.addEventListener("click", function navigateRight() {
-    parent.scrollLeft += cardWidth;
-  });
+  navigateRightBtn.addEventListener(
+    "click",
+    navigateRight.bind(null, parent, cardWidth)
+  );
 };

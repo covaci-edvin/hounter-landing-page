@@ -1,6 +1,7 @@
 @mixin horizontalScroll {
-  overflow-y: scroll;
+  overflow-x: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
 
@@ -8,4 +9,11 @@
     width: 0;
     height: 0;
   }
+}
+
+@mixin centerSection {
+  margin: 0 auto;
+  max-width: 126rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
 }

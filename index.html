@@ -44,7 +44,7 @@
 
     <link rel="stylesheet" href="public/styles/main.scss" />
   </head>
-  <body class="">
+  <body>
     <header class="header">
       <div class="header__content u-section-content">
         <img
@@ -65,8 +65,7 @@
               </a>
             </li>
             <li class="navbar__item">
-              <a
-                href="#"
+              <button
                 class="btn btn--white btn--white-dropdown dropdown-trigger"
                 aria-label="Property"
                 id="property"
@@ -78,7 +77,7 @@
                 <div class="dropdown">
                   <ul class="dropdown__list"></ul>
                 </div>
-              </a>
+              </button>
             </li>
             <li class="navbar__item">
               <a href="#" class="btn btn--outline" aria-label="Sign Up">
@@ -169,7 +168,9 @@
       </section>
       <section class="recommendation-section">
         <div class="u-section-content">
-          <h2 class="section-title label-text">Our Recommendation</h2>
+          <h2 class="section-title section-title--horizontal label-text">
+            Our Recommendation
+          </h2>
           <div class="recommendation__heading">
             <h1 class="heading-2">Featured House</h1>
             <div class="recommendation__filters">
@@ -230,7 +231,9 @@
       </section>
       <section class="tour-section u-section-content">
         <div class="tour__info">
-          <h2 class="section-title label-text">Ready to Sell</h2>
+          <h2 class="section-title section-title--horizontal label-text">
+            Ready to Sell
+          </h2>
           <div class="tour__title">
             <h1 class="heading-2">Let's tour and see our house!</h1>
             <p class="body-text tour__subtitle">
@@ -326,6 +329,7 @@
       </section>
       <div class="video-player">
         <iframe
+          loading="lazy"
           class="video-player__video-box"
           src="https://www.veed.io/embed/c26d530c-d929-47f8-a5a2-3e7f2e9c6dfa"
           width="744"
@@ -342,6 +346,20 @@
           </svg>
         </div>
       </div>
+      <section class="reviews-section">
+        <div class="reviews-heading">
+          <h2 class="section-title section-title--vertical label-text">
+            See Our Review
+          </h2>
+          <h1 class="heading-2">What Our User Say About Us</h1>
+        </div>
+        <div class="reviews"></div>
+        <div class="reviews__dots">
+          <span class="reviews__dot active"></span>
+          <span class="reviews__dot"></span>
+          <span class="reviews__dot"></span>
+        </div>
+      </section>
     </main>
 
     <!-- <div class="user">
