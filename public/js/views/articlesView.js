@@ -35,7 +35,6 @@ function createArticleMarkup(article, index, visible = true) {
 function createArticlesListMarkup(articles) {
   const first = articles.slice(0, 3);
   const last = articles.slice(3, 6);
-  console.log(first, last);
   const firstThree = first.map((article, index) =>
     createArticleMarkup(article, index + 0)
   );
@@ -43,8 +42,6 @@ function createArticlesListMarkup(articles) {
   const lastThree = last.map((article, index) =>
     createArticleMarkup(article, index + 3, false)
   );
-
-  console.log(firstThree, lastThree);
 
   return { firstThree, lastThree };
 }
