@@ -16,17 +16,19 @@ import { setVideoPlayer } from "./views/videoPlayerView.js";
 import { setReviews } from "./views/reviewsView.js";
 import { setArticles } from "./views/articlesView.js";
 import { setSubscribeForm } from "./views/subscribeView.js";
+import { setJoinForm } from "./views/joinView.js";
 
 function init() {
   setPropertyDropdown(typesOfProperty);
-  // setSelectInput();
-  // setTextArea(MAX_NUM_OF_CHARS);
+  setSelectInput();
+  setTextArea(MAX_NUM_OF_CHARS);
   setAccomplishments(accomplishments);
   setRecommendations(recommendations, labels);
   setVideoPlayer();
   setReviews(reviews);
   setArticles(articles);
   setSubscribeForm();
+  setJoinForm();
 }
 
 init();

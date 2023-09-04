@@ -21,10 +21,9 @@ body {
   font-family: $font-primary-regular;
   background-color: $color-white;
   color: $color-black;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .lock-scroll {
-  // position: fixed;
   overflow-y: hidden;
 }
