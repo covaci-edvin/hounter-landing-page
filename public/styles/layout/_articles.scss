@@ -6,6 +6,7 @@
 }
 
 .articles-section {
+  position: relative;
   &__btn {
     margin-top: 1.6rem;
   }
@@ -33,5 +34,12 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+  }
+
+  &__blur-bg {
+    position: absolute;
+    top: -15rem;
+    left: -35rem;
+    z-index: -1;
   }
 }
