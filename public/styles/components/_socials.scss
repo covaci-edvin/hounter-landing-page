@@ -1,0 +1,24 @@
+.socials {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social {
+  &__link {
+    color: $color-black;
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 3.2rem;
+    height: 3.2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+
+      fill: $color-primary;
+    }
+  }
+}
