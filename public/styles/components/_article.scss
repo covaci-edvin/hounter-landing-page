@@ -5,7 +5,7 @@
   gap: 3.2rem;
   align-items: center;
   color: $color-black;
-  background-color: $color-white;
+  background-color: transparent;
   border-radius: 1.6rem;
   transition: all 0.6s;
   opacity: 1;
@@ -29,11 +29,12 @@
   }
 
   &:hover {
-    background-color: $color-grey-light;
+    background-color: rgba($color-white, 0.5);
+    box-shadow: $shadow-md;
   }
 
   &:active {
-    background-color: $color-grey-light-active;
+    background-color: rgba($color-white, 0.5);
   }
 
   .user__sub-heading {
@@ -109,7 +110,8 @@
 }
 
 .article-active {
-  background-color: $color-grey-light;
+  background-color: rgba($color-white, 0.5);
+  box-shadow: $shadow-md;
 }
 
 .hide {
