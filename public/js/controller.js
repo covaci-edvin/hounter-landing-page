@@ -17,6 +17,7 @@ import { setReviews } from "./views/reviewsView.js";
 import { setArticles } from "./views/articlesView.js";
 import { setSubscribeForm } from "./views/subscribeView.js";
 import { setJoinForm } from "./views/joinView.js";
+import { setCookieBanner } from "./views/cookieBannerView.js";
 
 function init() {
   setPropertyDropdown(typesOfProperty);
@@ -29,6 +30,7 @@ function init() {
   setArticles(articles);
   setSubscribeForm();
   setJoinForm();
+  setCookieBanner();
 }
 
 init();
