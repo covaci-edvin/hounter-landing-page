@@ -101,7 +101,7 @@
               where it will be easier for you
             </p>
           </div>
-          <div class="hero__cta form__group">
+          <div class="hero__cta">
             <form action="" class="form--complex">
               <label for="location">
                 <svg class="form__icon form__icon--yellow">
@@ -420,6 +420,116 @@
           />
         </div>
       </section>
+      <section class="u-section-content">
+        <div class="join-section">
+          <div class="join__info">
+            <h1 class="heading-3 join__info-heading">
+              Would you like to join?
+            </h1>
+            <div class="join__info-steps">
+              <p class="join__info-step body-text">
+                Quickly get three quotes from these local that people love in
+                online reviews.
+              </p>
+              <div class="green-line"></div>
+              <p class="join__info-step body-text">
+                Pick the whose estimate suits you best.
+              </p>
+              <div class="green-line"></div>
+              <p class="join__info-step body-text">
+                We then make sure the work i done to your complete satisfaction.
+              </p>
+            </div>
+            <div class="join__illustration-container">
+              <img
+                class="join__illustration"
+                src="/public/assets/images/create.webp"
+                alt=""
+              />
+              <img
+                src="/public/assets/svgs/blur-bg-4.svg"
+                class="join__illustration-bg"
+                alt=""
+              />
+            </div>
+          </div>
+          <form action="" class="join__form">
+            <label for="name" class="label-text-medium join__form-label"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="input input--default"
+              placeholder="Your name"
+            />
+            <label for="name" class="label-text-medium join__form-label"
+              >Surname</label
+            >
+            <input
+              type="text"
+              id="surname"
+              class="input input--default"
+              placeholder="Your Surname"
+            />
+            <label for="select" class="label-text-medium join__form-label"
+              >Education</label
+            >
+            <div class="form__group">
+              <div class="input input--default input--select">
+                <span class="select__placeholder" id="select">Select One</span>
+                <svg class="select__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#arrow" />
+                </svg>
+              </div>
+              <ul class="select__options label-text-medium">
+                <li class="select__option">JavaScript</li>
+                <li class="select__option">Python</li>
+                <li class="select__option">React</li>
+                <li class="select__option">HTML</li>
+              </ul>
+            </div>
+            <label for="message" class="label-text-medium join__form-label"
+              >Message</label
+            >
+            <div class="form__group">
+              <div class="input input--textarea">
+                <textarea
+                  id="message"
+                  class="textarea"
+                  placeholder="Textarea"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <span class="textarea__count label-text-small">0/500</span>
+            </div>
+            <div class="form__group join__form-checkbox">
+              <input type="checkbox" id="checkbox" class="checkbox" />
+              <label for="checkbox" class="checkbox__label label-text-medium">
+                <div class="checkbox__icon-container">
+                  <svg class="checkbox__icon">
+                    <use xlink:href="/assets/svgs/sprite.svg#check" />
+                  </svg>
+                </div>
+                <p class="checkbox__text">
+                  I give consent to the processing of my personal data given in
+                  the contact form above under the terms and conditions of Grid
+                  Dynamics Privacy Policy.
+                </p>
+              </label>
+            </div>
+            <button
+              class="btn btn--filled btn--icon-right join__btn"
+              aria-label="More articles"
+            >
+              <span>Join now</span>
+              <svg class="btn__icon">
+                <use xlink:href="/assets/svgs/sprite.svg#arrow" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- <div class="user">
@@ -560,7 +670,7 @@
         <label for="email" class="input--default__label label-text-small"
           >Field error. Please fix it</label
         >
-      </div>
+      </div>ftext
       <div class="form__group">
         <input
           type="text"
