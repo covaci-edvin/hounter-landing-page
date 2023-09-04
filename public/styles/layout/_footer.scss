@@ -1,0 +1,44 @@
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12rem;
+}
+
+.footer {
+  &__bio {
+    max-width: 37.6rem;
+    margin-right: 2.4rem;
+  }
+
+  &__bio-text {
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+    line-height: 2.4rem;
+    color: $color-grey-3;
+  }
+
+  &__more {
+    display: flex;
+    max-width: 68.2rem;
+    width: 100%;
+    justify-content: space-between;
+
+    & :not(:last-child) {
+      margin-right: 2.4rem;
+    }
+  }
+}
+
+.link-list {
+  list-style: none;
+  margin-top: 2.4rem;
+
+  & :not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $color-grey-2;
+}
