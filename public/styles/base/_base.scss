@@ -14,18 +14,17 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
   font-family: $font-primary-regular;
   background-color: $color-white;
   color: $color-black;
-  overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .lock-scroll {
   // position: fixed;
-  // scrollbar-gutter: stable;
   overflow-y: hidden;
 }

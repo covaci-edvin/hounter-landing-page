@@ -104,7 +104,7 @@
           <div class="hero__cta form__group">
             <form action="" class="form--complex">
               <label for="location">
-                <svg class="form__icon">
+                <svg class="form__icon form__icon--yellow">
                   <use xlink:href="/assets/svgs/sprite.svg#location" />
                 </svg>
               </label>
@@ -379,7 +379,46 @@
           <ul class="articles__list"></ul>
           <div class="articles__display-container u-show"></div>
         </div>
-        <img src="/assets/svgs/blur-bg-3.svg" alt="" class="articles__blur-bg" />
+        <img
+          src="/assets/svgs/blur-bg-3.svg"
+          alt=""
+          class="articles__blur-bg"
+        />
+      </section>
+      <section class="u-section-content">
+        <div class="subscribe">
+          <div class="subscribe__content">
+            <h1 class="heading-2 subscribe__heading">
+              Subscribe For More Info and update from Hounter
+            </h1>
+            <form class="form--complex">
+              <label for="location">
+                <svg class="form__icon form__icon--blue">
+                  <use xlink:href="/assets/svgs/sprite.svg#mail" />
+                </svg>
+              </label>
+              <input
+                id="subscribe-email"
+                type="email"
+                class="input input--complex"
+                placeholder="Your email here"
+              />
+              <button id="subscribe-btn" class="btn btn--filled">
+                <span class="btn__text">Subscribe now</span>
+              </button>
+            </form>
+          </div>
+          <img
+            src="./public/assets/images/subscribe-bg-right.webp"
+            alt=""
+            class="subscribe__bg-img subscribe__bg-img--left"
+          />
+          <img
+            src="./public/assets/images/subscribe-bg-left.webp"
+            alt=""
+            class="subscribe__bg-img subscribe__bg-img--right"
+          />
+        </div>
       </section>
     </main>
 
