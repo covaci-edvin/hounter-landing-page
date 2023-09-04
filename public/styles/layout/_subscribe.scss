@@ -1,0 +1,42 @@
+.subscribe {
+  background-image: url("/assets/images/subscribe-bg.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 3.2rem;
+  height: 31.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 4rem;
+    max-width: 49.6rem;
+    z-index: 10;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__bg-img {
+    $padding: 3.8rem;
+    position: absolute;
+    height: calc(100% - $padding * 2);
+
+    &--left {
+      top: $padding;
+      left: $padding;
+    }
+
+    &--right {
+      top: $padding;
+      right: $padding;
+    }
+  }
+}

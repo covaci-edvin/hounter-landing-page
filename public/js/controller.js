@@ -15,6 +15,7 @@ import { setRecommendations } from "./views/recommendationsView.js";
 import { setVideoPlayer } from "./views/videoPlayerView.js";
 import { setReviews } from "./views/reviewsView.js";
 import { setArticles } from "./views/articlesView.js";
+import { setSubscribeForm } from "./views/subscribeView.js";
 
 function init() {
   setPropertyDropdown(typesOfProperty);
@@ -25,6 +26,7 @@ function init() {
   setVideoPlayer();
   setReviews(reviews);
   setArticles(articles);
+  setSubscribeForm();
 }
 
 init();

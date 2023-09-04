@@ -15,12 +15,20 @@
     outline: $border-input;
     outline-offset: -1px;
     border-radius: $radius-input;
+    background-color: $color-white;
   }
 
   &__icon {
     height: 2.4rem;
     width: 2.4rem;
-    fill: $color-secondary;
+
+    &--yellow {
+      fill: $color-secondary;
+    }
+
+    &--blue {
+      fill: $color-info;
+    }
   }
 }
 
