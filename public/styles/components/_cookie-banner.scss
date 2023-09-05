@@ -1,0 +1,38 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  color: $color-primary;
+  max-width: 46.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $color-primary-light;
+  padding: 1.6rem 4rem;
+  border-radius: 2.8rem;
+  box-shadow: $shadow-md;
+}
+
+.cookie {
+  &__text {
+    margin-left: 1.2rem;
+    margin-right: auto;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  &__icon--black {
+    color: $color-black;
+  }
+}
+
+.close-banner {
+  cursor: pointer;
+}

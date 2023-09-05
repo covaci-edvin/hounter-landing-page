@@ -45,6 +45,15 @@
     <link rel="stylesheet" href="public/styles/main.scss" />
   </head>
   <body>
+    <div class="cookie-banner">
+      <svg class="cookie__icon">
+        <use xlink:href="/assets/svgs/sprite.svg#cookie" />
+      </svg>
+      <h1 class="cookie__text body-text-semibold">We are using cookies</h1>
+      <svg class="cookie__icon cookie__icon--black close-banner">
+        <use xlink:href="/assets/svgs/sprite.svg#cross" />
+      </svg>
+    </div>
     <header class="header">
       <div class="header__content u-section-content">
         <img
@@ -192,6 +201,16 @@
                 <span>Villa</span>
                 <svg class="btn__icon">
                   <use xlink:href="/assets/svgs/sprite.svg#villa" />
+                </svg>
+              </button>
+              <button
+                href="#"
+                class="btn btn--outline btn--icon-left filter"
+                aria-label="Filter Apartment Property"
+              >
+                <span>Apartment</span>
+                <svg class="btn__icon">
+                  <use xlink:href="/assets/svgs/sprite.svg#apartment" />
                 </svg>
               </button>
               <button
@@ -581,7 +600,6 @@
             </li>
           </ul>
         </div>
-
         <div class="links">
           <h2 class="subtitle">Article</h2>
           <ul class="link-list label-text">
@@ -599,7 +617,6 @@
             </li>
           </ul>
         </div>
-
         <div class="links">
           <h2 class="subtitle">Contact</h2>
           <ul class="link-list label-text">
@@ -620,7 +637,6 @@
         </div>
       </div>
     </footer>
-
     <!-- <div class="user">
       <div class="user__img-container small">
         <img class="user__img" src="/assets/images/avatar-1.webp" alt="user" />
