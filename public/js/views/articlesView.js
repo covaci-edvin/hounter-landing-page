@@ -9,7 +9,7 @@ function createArticleMarkup(article, index, visible = true) {
     <li class="article ${!visible && "hide"}" data-id="${index + 1}" >
         <div class="article__img-container">
             <img
-                src="/public/assets/images/${article.imageSmall}"
+                src="/assets/images/${article.imageSmall}"
                 alt="article 1" 
             />
         </div>
